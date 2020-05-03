@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ImagePicker_Starter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0a-uk-USV">
+                                <rect key="frame" x="0.0" y="749" width="414" height="51"/>
+                                <color key="backgroundColor" red="0.53713250290000003" green="0.6976258434" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                <state key="normal" title="Randomize">
+                                    <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="randomizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Va-lm-UhC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="178-hG-ZEm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TuV-R7-JL0">
+                                <rect key="frame" x="0.0" y="177" width="414" height="552"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cdc-ao-t89">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="130.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNp-Pr-cpd">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uft-RC-8pD">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf5-NQ-NP4">
+                                                <rect key="frame" x="282.5" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sup-ff-CeP">
+                                        <rect key="frame" x="0.0" y="140.5" width="414" height="130.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D0-lc-UD8">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI3-6O-ugw">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L97-Dd-K7M">
+                                                <rect key="frame" x="282.5" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="84p-BS-lpZ">
+                                        <rect key="frame" x="0.0" y="281" width="414" height="130.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0db-F6-Dvv">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIK-eF-ezz">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="624-k9-rXf">
+                                                <rect key="frame" x="282.5" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9gO-vI-bt7">
+                                        <rect key="frame" x="0.0" y="421.5" width="414" height="130.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1a-fs-ROA">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH3-OL-Ykj">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="130.5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdQ-hE-Wm4">
+                                                <rect key="frame" x="282.5" y="0.0" width="131.5" height="130.5"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TuV-R7-JL0" secondAttribute="height" multiplier="3:4" id="fAN-47-wUb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="178-hG-ZEm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5ur-fw-SRL"/>
+                            <constraint firstItem="S0a-uk-USV" firstAttribute="width" secondItem="TuV-R7-JL0" secondAttribute="width" id="QDn-yP-Knt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="178-hG-ZEm" secondAttribute="top" id="Rge-e4-Mmk"/>
+                            <constraint firstItem="178-hG-ZEm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UT2-c7-A0b"/>
+                            <constraint firstItem="TuV-R7-JL0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aZc-fH-8ES"/>
+                            <constraint firstItem="S0a-uk-USV" firstAttribute="top" secondItem="TuV-R7-JL0" secondAttribute="bottom" constant="20" id="b1p-k5-soh"/>
+                            <constraint firstItem="TuV-R7-JL0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hLG-Rf-x0L"/>
+                            <constraint firstItem="S0a-uk-USV" firstAttribute="centerX" secondItem="TuV-R7-JL0" secondAttribute="centerX" id="rHQ-Vn-wwv"/>
+                            <constraint firstItem="TuV-R7-JL0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wNV-aX-mfi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="outerStackView" destination="TuV-R7-JL0" id="1no-qv-qvM"/>
+                        <segue destination="Ejl-mY-Oim" kind="show" identifier="showImage" id="GgL-8E-DgZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="117"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="XaX-ls-rch">
+            <objects>
+                <viewController id="Ejl-mY-Oim" customClass="ImageViewController" customModule="ImagePicker_Starter" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cco-uh-371">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-9W-lID">
+                                <rect key="frame" x="20" y="234" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sB1-9W-lID" secondAttribute="height" multiplier="1:1" id="Loq-vd-7WC"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="imageButtonPressed:" destination="Ejl-mY-Oim" eventType="touchUpInside" id="8W9-lv-MC5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sB1-9W-lID" firstAttribute="centerX" secondItem="Cco-uh-371" secondAttribute="centerX" id="HBl-pA-hey"/>
+                            <constraint firstItem="sB1-9W-lID" firstAttribute="centerY" secondItem="Cco-uh-371" secondAttribute="centerY" id="QTi-Kd-6Tj"/>
+                            <constraint firstItem="sB1-9W-lID" firstAttribute="leading" secondItem="Cco-uh-371" secondAttribute="leadingMargin" id="gKn-GN-q9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ocy-Ng-nhB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DBw-4w-zMS"/>
+                    <connections>
+                        <outlet property="image" destination="sB1-9W-lID" id="A1E-8y-pMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhL-hS-VrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975.36231884057975" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
